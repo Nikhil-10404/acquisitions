@@ -1,0 +1,9 @@
+{"level":"info","message":"Hello from Acquisition!","service":"acquisitions-api"}
+{"level":"info","message":"combinde","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisition!","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:11:14:27 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:16:44:14 +0000] \"GET /api/auth/sign-up HTTP/1.1\" 404 155 \"-\" \"PostmanRuntime/7.44.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:16:46:13 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 404 156 \"-\" \"PostmanRuntime/7.44.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User nik@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: nik@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [12/Sep/2025:16:55:27 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 96 \"-\" \"PostmanRuntime/7.44.0\"","service":"acquisitions-api"}
