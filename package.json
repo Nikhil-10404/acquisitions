@@ -25,6 +25,7 @@
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
     "dev:docker": "powershell -ExecutionPolicy Bypass -File ./scripts/dev.ps1",
+    "prod:docker": "powershell -ExecutionPolicy Bypass -File ./scripts/prod.ps1",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules ARCJET_ENV=development jest"
   },
   "repository": {
