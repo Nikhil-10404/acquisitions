@@ -15,4 +15,21 @@ export default {
   },
 
   testMatch: ['<rootDir>/test/**/*.test.js'],
+
+  // ✅ NEW: coverage
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  collectCoverageFrom: ['src/**/*.js'],
+
+  // ✅ NEW: reporters (console + junit XML)
+  reporters: [
+    'default',
+    [
+      'jest-junit',
+      {
+        outputDirectory: './',
+        outputName: 'test-results.xml',
+      },
+    ],
+  ],
 };
