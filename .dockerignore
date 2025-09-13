@@ -1,0 +1,61 @@
+# Docker ignore file - exclude files from build context
+
+# Dependencies
+node_modules
+npm-debug.log*
+
+# Environment files (will be passed via docker-compose)
+.env*
+!.env.example
+
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+docs/
+
+# Logs
+logs/
+*.log
+
+# Docker files
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# Neon Local
+.neon_local/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Test files
+test/
+tests/
+__tests__/
+*.test.js
+*.spec.js

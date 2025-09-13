@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # Neon Local Proxy Service
+  neon-local:
+    image: neondatabase/neon_local:latest
+    container_name: acquisitions-neon-local
+    ports:
+      - '5432:5432'
+    env_file:
+      - .env.development
+    volumes:
+      # Optional: Persist branch per Git branch
+      - ./.neon_local/:/tmp/.neon_local
+      - ./.git/HEAD:/tmp/.git/HEAD:ro
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -h localhost -p 5432 -U neon']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - acquisitions-network
+
+  # Application Service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: acquisitions-app-dev
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env.development
+    volumes:
+      # Mount source code for development (hot reload)
+      - ./src:/app/src
+      - ./logs:/app/logs
+    networks:
+      - acquisitions-network
+    restart: unless-stopped
+
+  # Optional: Database Admin Tool (for development)
+  adminer:
+    image: adminer:latest
+    container_name: acquisitions-adminer
+    ports:
+      - '8080:8080'
+    environment:
+      ADMINER_DEFAULT_SERVER: neon-local
+    depends_on:
+      - neon-local
+    networks:
+      - acquisitions-network
+    profiles:
+      - tools
+
+networks:
+  acquisitions-network:
+    driver: bridge
+
+volumes:
+  neon_local_data:
+    driver: local

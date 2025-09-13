@@ -1,0 +1,79 @@
+version: '3.8'
+
+services:
+  # Application Service (Production)
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+    container_name: acquisitions-app-prod
+    ports:
+      - '${PORT:-3000}:3000'
+    env_file:
+      - .env.production
+    volumes:
+      # Only mount logs for production (no source code mounting)
+      - ./logs:/app/logs
+      - /app/node_modules # Prevent node_modules from being overwritten
+    networks:
+      - acquisitions-network
+    restart: always
+    healthcheck:
+      test: ['CMD-SHELL', 'curl -f http://localhost:3000/health || exit 1']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.5'
+        reservations:
+          memory: 256M
+          cpus: '0.25'
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_BIND_SERVICE
+
+  # Optional: Reverse Proxy (Nginx)
+  nginx:
+    image: nginx:alpine
+    container_name: acquisitions-nginx
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - app
+    networks:
+      - acquisitions-network
+    restart: always
+    profiles:
+      - nginx
+
+  # Optional: Log aggregation
+  fluentd:
+    image: fluentd:v1.16-1
+    container_name: acquisitions-fluentd
+    volumes:
+      - ./fluentd/conf:/fluentd/etc
+      - ./logs:/var/log/app
+    ports:
+      - '24224:24224'
+    networks:
+      - acquisitions-network
+    profiles:
+      - logging
+
+networks:
+  acquisitions-network:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.name: br-acquisitions
