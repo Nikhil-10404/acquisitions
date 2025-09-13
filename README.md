@@ -78,6 +78,7 @@ docker-compose --env-file .env.development.local -f docker-compose.dev.yml --pro
 ```
 
 This will start:
+
 - **Neon Local proxy** on port 5432 (creates ephemeral database branches)
 - **Your application** on port 3000
 - **Adminer** (database admin) on port 8080 (if using --profile tools)
@@ -103,7 +104,7 @@ curl -X POST http://localhost:3000/api/auth/sign-up \
   -H "Content-Type: application/json" \
   -d '{
     "name": "John Doe",
-    "email": "john@example.com", 
+    "email": "john@example.com",
     "password": "password123"
   }'
 
@@ -218,7 +219,7 @@ npm run dev
 npm run lint
 npm run lint:fix
 
-# Format code  
+# Format code
 npm run format
 npm run format:check
 ```
@@ -228,12 +229,14 @@ npm run format:check
 The application automatically configures itself based on `NODE_ENV`:
 
 ### Development Mode (`NODE_ENV=development`)
+
 - Connects to Neon Local proxy at `neon-local:5432`
 - Uses HTTP for Neon serverless driver
 - Debug logging enabled
 - Creates ephemeral database branches
 
 ### Production Mode (`NODE_ENV=production`)
+
 - Connects directly to Neon Cloud
 - Uses HTTPS for Neon serverless driver
 - Info-level logging
@@ -242,11 +245,13 @@ The application automatically configures itself based on `NODE_ENV`:
 ## 🔒 Security Considerations
 
 ### Development
+
 - Uses default JWT secret (acceptable for development)
 - Ephemeral database branches (data is deleted when containers stop)
 - Debug logging (may expose sensitive information)
 
 ### Production
+
 - **Required**: Strong, randomly generated JWT secret
 - **Required**: Secure DATABASE_URL connection string
 - **Recommended**: Enable HTTPS/TLS termination
@@ -255,11 +260,13 @@ The application automatically configures itself based on `NODE_ENV`:
 ## 📋 API Endpoints
 
 ### Authentication
+
 - `POST /api/auth/sign-up` - Register new user
-- `POST /api/auth/sign-in` - Sign in user  
+- `POST /api/auth/sign-in` - Sign in user
 - `POST /api/auth/sign-out` - Sign out user
 
 ### System
+
 - `GET /health` - Health check endpoint
 - `GET /api` - API status
 
@@ -268,12 +275,14 @@ The application automatically configures itself based on `NODE_ENV`:
 ### Common Issues
 
 **"User with this email already exists"**
+
 ```bash
 # Check if user exists in database
 docker-compose -f docker-compose.dev.yml exec neon-local psql -U neon -d neondb -c "SELECT * FROM users;"
 ```
 
 **Database connection issues**
+
 ```bash
 # Check if Neon Local is running
 docker-compose -f docker-compose.dev.yml ps neon-local
@@ -286,6 +295,7 @@ docker-compose -f docker-compose.dev.yml exec app env | grep -E "(DATABASE_URL|N
 ```
 
 **Migration issues**
+
 ```bash
 # Reset migrations (development only!)
 rm -rf drizzle/
@@ -310,7 +320,7 @@ docker-compose -f docker-compose.dev.yml exec app sh
 ## 📚 Additional Resources
 
 - [Neon Database Documentation](https://neon.com/docs)
-- [Neon Local Documentation](https://neon.com/docs/local/neon-local)  
+- [Neon Local Documentation](https://neon.com/docs/local/neon-local)
 - [Drizzle ORM Documentation](https://orm.drizzle.team)
 - [Express.js Documentation](https://expressjs.com)
 
