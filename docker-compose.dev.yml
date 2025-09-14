@@ -1,8 +1,5 @@
 version: '3.8'
 
-# Project name for isolation
-name: acquisitions-dev
-
 services:
   # Neon Local Proxy Service
   neon-local:

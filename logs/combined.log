@@ -338,3 +338,155 @@
 {"level":"info","message":"Getting users...","service":"acquisitions-api"}
 {"level":"info","message":"::ffff:172.18.0.1 - - [14/Sep/2025:11:08:26 +0000] \"GET /health HTTP/1.1\" 200 78 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
 {"level":"info","message":"::ffff:172.18.0.1 - - [14/Sep/2025:11:08:26 +0000] \"GET /api/users HTTP/1.1\" - - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [14/Sep/2025:13:14:56 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.6584\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [14/Sep/2025:13:16:32 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.6584\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [14/Sep/2025:13:22:50 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.6584\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [14/Sep/2025:13:24:31 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [14/Sep/2025:13:24:31 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [14/Sep/2025:13:26:14 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:42:24 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:42:24 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:42:41 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:42:42 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:42:50 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:42:50 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:20 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:20 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:44 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:46 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:47 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:47 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:47 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:47 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:48 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:48 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:48 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:48 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:48 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:48 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:49 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:49 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:49 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:43:50 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:45:16 +0000] \"GET / HTTP/1.1\" 200 63 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:45:16 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:45:36 +0000] \"GET / HTTP/1.1\" 200 63 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:13:45:36 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:24:53 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:24:54 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:24:57 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:20 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:21 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:22 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:22 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:22 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:22 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:22 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:22 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:23 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:23 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:23 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:23 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:23 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:23 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:23 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:24 +0000] \"GET / HTTP/1.1\" 200 64 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:24 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:24 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:25:24 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:37:05 +0000] \"GET / HTTP/1.1\" 200 65 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:37:05 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:40:36 +0000] \"GET / HTTP/1.1\" 200 65 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:40:37 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:41:12 +0000] \"GET / HTTP/1.1\" 200 65 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:41:12 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:41:33 +0000] \"GET / HTTP/1.1\" 200 65 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:41:33 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:41:35 +0000] \"GET / HTTP/1.1\" 200 65 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [14/Sep/2025:14:44:23 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.6584\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:47:14 +0000] \"GET / HTTP/1.1\" 200 63 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:47:14 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:47:31 +0000] \"GET / HTTP/1.1\" 200 63 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:47:32 +0000] \"GET / HTTP/1.1\" 200 63 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:47:32 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:47:32 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:47:32 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.19.0.1 - - [14/Sep/2025:14:47:33 +0000] \"GET / HTTP/1.1\" 200 63 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:14:55:21 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [14/Sep/2025:14:55:29 +0000] \"GET / HTTP/1.1\" 200 65 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [14/Sep/2025:14:55:29 +0000] \"GET /favicon.ico HTTP/1.1\" 404 27 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"🔥 Hot Reload Working - Production Mode!!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [14/Sep/2025:14:55:50 +0000] \"GET / HTTP/1.1\" 200 63 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:14:55:51 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:14:56:22 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:14:56:52 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:14:57:23 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:14:57:54 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:14:58:24 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:14:58:55 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:14:59:25 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:14:59:56 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:15:00:27 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:15:00:57 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:15:01:28 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:15:01:58 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"curl/8.14.1\"","service":"acquisitions-api"}

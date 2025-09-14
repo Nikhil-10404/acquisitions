@@ -41,8 +41,8 @@ if (!(Test-Path $composeFile)) {
     exit 1
 }
 
-# Run docker compose up - build and detach
-$up = Start-Process -FilePath "docker" -ArgumentList @("compose", "-f", $composeFile, "up", "--build", "-d") -NoNewWindow -PassThru -Wait
+# Run docker compose up - build and detach with project name for isolation
+$up = Start-Process -FilePath "docker" -ArgumentList @("compose", "-p", "acquisitions-prod", "-f", $composeFile, "up", "--build", "-d") -NoNewWindow -PassThru -Wait
 if ($up.ExitCode -ne 0) {
     Write-Host "[ERROR] docker compose up failed with exit code $($up.ExitCode)." -ForegroundColor Red
     exit $up.ExitCode
@@ -96,10 +96,10 @@ Write-Host "   ❤️  Health Check: http://localhost:3000/health" -ForegroundCo
 Write-Host ""
 Write-Host "📊 MONITORING:" -ForegroundColor Yellow
 Write-Host "   View logs: docker logs -f acquisitions-app-prod" -ForegroundColor Yellow
-Write-Host "   View compose logs: docker compose -f docker-compose.prod.yml logs -f" -ForegroundColor Yellow
+Write-Host "   View compose logs: docker compose -p acquisitions-prod -f docker-compose.prod.yml logs -f" -ForegroundColor Yellow
 Write-Host "   Container stats: docker stats acquisitions-app-prod" -ForegroundColor Yellow
 Write-Host ""
 Write-Host "🛑 MANAGEMENT:" -ForegroundColor Yellow
-Write-Host "   Stop app: docker compose -f docker-compose.prod.yml down" -ForegroundColor Yellow
+Write-Host "   Stop app: docker compose -p acquisitions-prod -f docker-compose.prod.yml down" -ForegroundColor Yellow
 Write-Host "   Restart app: npm run prod:docker" -ForegroundColor Yellow
 Write-Host ""

@@ -1,6 +1,3 @@
-# Project name for isolation
-name: acquisitions-prod
-
 services:
   # Application Service (Production)
   app:
@@ -24,8 +21,8 @@ services:
     # Docker Compose Watch for hot reload in production
     develop:
       watch:
-        # Watch source code changes
-        - action: sync
+        # Watch source code changes - use sync+restart for Node.js
+        - action: sync+restart
           path: ./src
           target: /app/src
           ignore:
@@ -92,5 +89,3 @@ services:
 networks:
   acquisitions-network:
     driver: bridge
-    driver_opts:
-      com.docker.network.bridge.name: br-acquisitions

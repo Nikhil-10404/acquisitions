@@ -25,9 +25,9 @@ app.use(
 app.use(securityMiddleware);
 
 app.get('/', (req, res) => {
-  logger.info('Hello from Acquisitions!');
+  logger.info('🔥 Hot Reload Working - Production Mode!!');
 
-  res.status(200).send('Hello from Acquisitions!');
+  res.status(200).send('🔥 Hot Reload Working - Production Mode Updated at ' + new Date().toLocaleTimeString());
 });
 
 app.get('/health', (req, res) => {

@@ -55,8 +55,8 @@ npm run db:migrate
 Write-Host "⏳ Waiting for the database to be ready..." -ForegroundColor Blue
 docker compose exec neon-local psql -U neon -d neondb -c 'SELECT 1'
 
-# Start development environment
-docker compose -f docker-compose.dev.yml up --build
+# Start development environment with project name for isolation
+docker compose -p acquisitions-dev -f docker-compose.dev.yml up --build
 
 Write-Host ""
 Write-Host "🎉 Development environment started successfully!" -ForegroundColor Green

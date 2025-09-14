@@ -17,6 +17,9 @@
   "scripts": {
     "dev": "node --watch src/index.js",
     "start": "node src/index.js",
+    "start:watch": "node --watch --watch-preserve-output src src/index.js",
+    "start:watch-nodemon": "nodemon --watch src --legacy-watch --polling-interval 1000 src/index.js",
+    "dev:local": "nodemon --watch src --legacy-watch --polling-interval 1000 --env-file .env.development src/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
@@ -26,7 +29,9 @@
     "db:studio": "drizzle-kit studio",
     "dev:docker": "powershell -ExecutionPolicy Bypass -File ./scripts/dev.ps1",
     "prod:docker": "powershell -ExecutionPolicy Bypass -File ./scripts/prod.ps1",
-    "prod:watch": "powershell -ExecutionPolicy Bypass -File ./scripts/prod-watch.ps1",
+    "prod:watch": "powershell -ExecutionPolicy Bypass -File ./scripts/prod-watch-fixed.ps1",
+    "prod:watch:enhanced": "powershell -ExecutionPolicy Bypass -File ./scripts/prod-watch-nodemon.ps1",
+    "docker:cleanup": "powershell -ExecutionPolicy Bypass -File ./scripts/cleanup.ps1",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules ARCJET_ENV=development jest"
   },
   "repository": {
@@ -66,6 +71,7 @@
     "eslint-plugin-prettier": "^5.5.4",
     "jest": "^30.1.3",
     "jest-junit": "^16.0.0",
+    "nodemon": "^3.1.7",
     "prettier": "^3.6.2",
     "supertest": "^7.1.4"
   }

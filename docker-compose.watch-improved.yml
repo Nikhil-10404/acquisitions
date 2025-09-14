@@ -1,0 +1,57 @@
+# Improved Production Docker Compose with enhanced hot reload for Windows
+services:
+  # Application Service (Production with Enhanced Hot Reload)
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.watch
+      target: runner
+    image: acquisitions-app:watch-improved
+    container_name: acquisitions-app-watch-improved
+    ports:
+      - '${PORT:-3000}:3000'
+    env_file:
+      - .env.production
+    volumes:
+      # Mount source code for immediate hot reload (Windows optimized)
+      - ./src:/app/src:cached
+      - ./logs:/app/logs:delegated
+      - /app/node_modules # Prevent node_modules from being overwritten
+    networks:
+      - acquisitions-network
+    restart: always
+    # Use nodemon for better Windows hot reload
+    command: ["npm", "run", "start:watch-nodemon"]
+    environment:
+      - NODE_ENV=production
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+      - ARCJET_ENV=development
+    healthcheck:
+      test: ['CMD-SHELL', 'curl -f http://localhost:3000/health || exit 1']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.5'
+        reservations:
+          memory: 256M
+          cpus: '0.25'
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_BIND_SERVICE
+
+networks:
+  acquisitions-network:
+    driver: bridge
+
+volumes:
+  neon_local_data:
+    driver: local
