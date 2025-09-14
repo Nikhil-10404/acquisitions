@@ -70,14 +70,36 @@ if ([string]::IsNullOrEmpty($containerStatus)) {
     } else {
         Write-Host "[SUCCESS] Migrations applied (or were already up to date)." -ForegroundColor Green
     }
+    
+    # Wait a moment for application to fully start
+    Write-Host "[VERIFY] Waiting for application to be fully ready..." -ForegroundColor Blue
+    Start-Sleep -Seconds 5
+    
+    # Test if application is accessible
+    try {
+        $response = Invoke-WebRequest -Uri "http://localhost:3000/health" -UseBasicParsing -TimeoutSec 10
+        if ($response.StatusCode -eq 200) {
+            Write-Host "[VERIFIED] Application is responding correctly!" -ForegroundColor Green
+        }
+    } catch {
+        Write-Host "[WARNING] Application might still be starting up..." -ForegroundColor Yellow
+        Write-Host "   If the links don't work immediately, wait a few more seconds." -ForegroundColor Yellow
+    }
 }
 
 Write-Host ""
-Write-Host "[COMPLETE] Production environment started!" -ForegroundColor Green
-Write-Host "   Application (containerized) should be available on the port configured in your docker-compose.prod.yml" -ForegroundColor Green
-Write-Host "   To view logs: docker logs -f [container-name] (or use the service name from docker-compose.prod.yml)" -ForegroundColor Green
+Write-Host "[COMPLETE] Production environment started successfully!" -ForegroundColor Green
+Write-Host "" 
+Write-Host "🌐 APPLICATION LINKS:" -ForegroundColor Cyan
+Write-Host "   📱 Main App: http://localhost:3000" -ForegroundColor Green
+Write-Host "   ❤️  Health Check: http://localhost:3000/health" -ForegroundColor Green
 Write-Host ""
-Write-Host "Useful commands:" -ForegroundColor Yellow
-Write-Host "   View logs: docker compose -f docker-compose.prod.yml logs -f" -ForegroundColor Yellow
+Write-Host "📊 MONITORING:" -ForegroundColor Yellow
+Write-Host "   View logs: docker logs -f acquisitions-app-prod" -ForegroundColor Yellow
+Write-Host "   View compose logs: docker compose -f docker-compose.prod.yml logs -f" -ForegroundColor Yellow
+Write-Host "   Container stats: docker stats acquisitions-app-prod" -ForegroundColor Yellow
+Write-Host ""
+Write-Host "🛑 MANAGEMENT:" -ForegroundColor Yellow
 Write-Host "   Stop app: docker compose -f docker-compose.prod.yml down" -ForegroundColor Yellow
+Write-Host "   Restart app: npm run prod:docker" -ForegroundColor Yellow
 Write-Host ""

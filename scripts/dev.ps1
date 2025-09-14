@@ -59,8 +59,14 @@ docker compose exec neon-local psql -U neon -d neondb -c 'SELECT 1'
 docker compose -f docker-compose.dev.yml up --build
 
 Write-Host ""
-Write-Host "🎉 Development environment started!" -ForegroundColor Green
-Write-Host "   Application: http://localhost:5173" -ForegroundColor Green
-Write-Host "   Database: postgres://neon:npg@localhost:5432/neondb" -ForegroundColor Green
+Write-Host "🎉 Development environment started successfully!" -ForegroundColor Green
 Write-Host ""
-Write-Host "To stop the environment, press Ctrl+C or run: docker compose down" -ForegroundColor Yellow
+Write-Host "🌐 APPLICATION LINKS:" -ForegroundColor Cyan
+Write-Host "   📱 Main App: http://localhost:3001" -ForegroundColor Green
+Write-Host "   ❤️  Health Check: http://localhost:3001/health" -ForegroundColor Green
+Write-Host "   🗄️  Database Admin: http://localhost:8080" -ForegroundColor Green
+Write-Host ""
+Write-Host "🗄️  DATABASE CONNECTION:" -ForegroundColor Cyan
+Write-Host "   Direct: postgres://neon:npg@localhost:5432/neondb" -ForegroundColor Green
+Write-Host ""
+Write-Host "⏹️  To stop: Press Ctrl+C or run 'docker compose down'" -ForegroundColor Yellow

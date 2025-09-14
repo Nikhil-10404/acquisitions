@@ -1,3 +1,6 @@
+# Project name for isolation
+name: acquisitions-prod
+
 services:
   # Application Service (Production)
   app:
@@ -5,6 +8,7 @@ services:
       context: .
       dockerfile: Dockerfile
       target: runner
+    image: acquisitions-app:prod
     container_name: acquisitions-app-prod
     ports:
       - '${PORT:-3000}:3000'
@@ -17,6 +21,21 @@ services:
     networks:
       - acquisitions-network
     restart: always
+    # Docker Compose Watch for hot reload in production
+    develop:
+      watch:
+        # Watch source code changes
+        - action: sync
+          path: ./src
+          target: /app/src
+          ignore:
+            - node_modules/
+        # Watch package.json for dependency changes  
+        - action: rebuild
+          path: ./package.json
+        # Watch Dockerfile for image changes
+        - action: rebuild
+          path: ./Dockerfile
     healthcheck:
       test: ['CMD-SHELL', 'curl -f http://localhost:3000/health || exit 1']
       interval: 30s

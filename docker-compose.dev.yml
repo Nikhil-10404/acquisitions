@@ -1,5 +1,8 @@
 version: '3.8'
 
+# Project name for isolation
+name: acquisitions-dev
+
 services:
   # Neon Local Proxy Service
   neon-local:
@@ -26,9 +29,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      target: runner
+    image: acquisitions-app:dev
     container_name: acquisitions-app-dev
     ports:
-      - '3000:3000'
+      - '3001:3000'
     env_file:
       - .env.development
     volumes:
